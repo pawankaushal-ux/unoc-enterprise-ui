@@ -2898,27 +2898,8 @@ SMPP bind failure on BSNL route detected at 08:15 IST. The bind is failing with 
 <input class="op-search-input" id="global-search" type="text" placeholder="Search current page content..." oninput="filterSearch(this.value)">
 <div id="content-match-count" style="font-size:11px;color:var(--teal);margin:10px 0 4px;display:none"></div>
 <div id="content-match-info" style="font-size:10px;color:var(--sub);margin-bottom:12px;display:none">Filtering table rows and cards on the active page. Clear search to show all.</div>
-<div class="op-group-title" style="cursor:pointer" onclick="document.getElementById('search-results').style.display=document.getElementById('search-results').style.display==='none'?'block':'none';this.querySelector('span').textContent=document.getElementById('search-results').style.display==='none'?'▸':'▾'">Go to Page <span style="float:right">▾</span></div>
-<div id="search-results">
-<div class="op-result" onclick="searchNav('command','UNOC','Command Center','sh')"><div class="op-icon" style="background:rgba(0,212,180,.1);color:var(--teal)">&#9776;</div><div class="op-text"><div class="op-title">Command Center</div><div class="op-desc">Live KPIs, channel health, incidents</div></div></div>
-<div class="op-result" onclick="searchNav('ticket-queue','CX','Ticket Queue','cx')"><div class="op-icon" style="background:rgba(0,212,180,.1);color:var(--teal)">&#128196;</div><div class="op-text"><div class="op-title">Ticket Queue</div><div class="op-desc">47 open tickets across CX, BX, EX teams</div></div></div>
-<div class="op-result" onclick="searchNav('customer-health','CX','Customer Health','cx')"><div class="op-icon" style="background:rgba(0,212,180,.1);color:var(--teal)">&#10084;</div><div class="op-text"><div class="op-title">Customer Health</div><div class="op-desc">Customer health scores and risk indicators</div></div></div>
-<div class="op-result" onclick="searchNav('customer-360','CX','Customer 360','cx')"><div class="op-icon" style="background:rgba(0,212,180,.1);color:var(--teal)">&#128100;</div><div class="op-text"><div class="op-title">Customer 360</div><div class="op-desc">Unified customer profile and history</div></div></div>
-<div class="op-result" onclick="searchNav('csi','CX','CSI Dashboard','cx')"><div class="op-icon" style="background:rgba(0,212,180,.1);color:var(--teal)">&#9733;</div><div class="op-text"><div class="op-title">CSI Dashboard</div><div class="op-desc">Customer Satisfaction Index — score 83.7</div></div></div>
-<div class="op-result" onclick="searchNav('bx-growth','BX','Growth Dashboard','bx')"><div class="op-icon" style="background:rgba(240,160,32,.1);color:var(--gold)">&#128200;</div><div class="op-text"><div class="op-title">Growth Dashboard</div><div class="op-desc">MRR $2.8M, ARR $33.6M, churn pipeline</div></div></div>
-<div class="op-result" onclick="searchNav('billing','BX','Billing Console','bx')"><div class="op-icon" style="background:rgba(240,160,32,.1);color:var(--gold)">&#128176;</div><div class="op-text"><div class="op-title">Billing Console</div><div class="op-desc">Account billing, low balance alerts</div></div></div>
-<div class="op-result" onclick="searchNav('churn','BX','Churn Pipeline','bx')"><div class="op-icon" style="background:rgba(240,160,32,.1);color:var(--gold)">&#9888;</div><div class="op-text"><div class="op-title">Churn Pipeline</div><div class="op-desc">At-risk accounts and intervention status</div></div></div>
-<div class="op-result" onclick="searchNav('vpi','BX','VPI Dashboard','bx')"><div class="op-icon" style="background:rgba(240,160,32,.1);color:var(--gold)">&#128202;</div><div class="op-text"><div class="op-title">VPI Dashboard</div><div class="op-desc">Value Performance Index — score 76.2</div></div></div>
-<div class="op-result" onclick="searchNav('infra','EX','Infrastructure','ex')"><div class="op-icon" style="background:rgba(45,127,255,.1);color:var(--blue)">&#9881;</div><div class="op-text"><div class="op-title">Infrastructure</div><div class="op-desc">Server health, Kubernetes, databases</div></div></div>
-<div class="op-result" onclick="searchNav('apdex','EX','Apdex Dashboard','ex')"><div class="op-icon" style="background:rgba(45,127,255,.1);color:var(--blue)">&#128640;</div><div class="op-text"><div class="op-title">Apdex Dashboard</div><div class="op-desc">Application performance — score 0.943</div></div></div>
-<div class="op-result" onclick="searchNav('availability','EX','Availability','ex')"><div class="op-icon" style="background:rgba(45,127,255,.1);color:var(--blue)">&#9889;</div><div class="op-text"><div class="op-title">Availability</div><div class="op-desc">99.997% uptime, SLA compliance</div></div></div>
-<div class="op-result" onclick="searchNav('pixaai','Shared','PixaAI Center','sh')"><div class="op-icon" style="background:rgba(163,92,255,.1);color:var(--purple)">&#129302;</div><div class="op-text"><div class="op-title">PixaAI Center</div><div class="op-desc">13 AI modules, inference costs, training</div></div></div>
-<div class="op-result" onclick="searchNav('channels','Shared','Channel Health','sh')"><div class="op-icon" style="background:rgba(163,92,255,.1);color:var(--purple)">&#128225;</div><div class="op-text"><div class="op-title">Channel Health</div><div class="op-desc">SMS, WhatsApp, Email, Voice, RCS health</div></div></div>
-<div class="op-result" onclick="searchNav('rbac','Shared','Team &amp; RBAC','sh')"><div class="op-icon" style="background:rgba(163,92,255,.1);color:var(--purple)">&#128101;</div><div class="op-text"><div class="op-title">Team &amp; RBAC</div><div class="op-desc">24 users, 10 roles, access control</div></div></div>
-<div class="op-result" onclick="searchNav('executive','Shared','Executive Dashboard','sh')"><div class="op-icon" style="background:rgba(163,92,255,.1);color:var(--purple)">&#127942;</div><div class="op-text"><div class="op-title">Executive Dashboard</div><div class="op-desc">CEO view — revenue, CSI, VPI, strategic KPIs</div></div></div>
-</div>
 <div class="op-group-title">Keyboard Shortcut</div>
-<div style="font-size:11px;color:var(--sub);padding:4px 0">Press <span style="background:var(--bg3);padding:2px 6px;border-radius:3px;font-family:var(--f-mono);font-size:10px;border:1px solid var(--bdr)">Ctrl+K</span> to open search anytime</div>
+<div style="font-size:11px;color:var(--sub);padding:4px 0">Press <span style="background:var(--bg3);padding:2px 6px;border-radius:3px;font-family:var(--f-mono);font-size:10px;border:1px solid var(--bdr)">Cmd+K</span> to open search anytime</div>
 </div>
 </div>
 
@@ -3158,11 +3139,6 @@ function searchNav(page, team, label, cls) {
 }
 function filterSearch(q) {
   q = q.toLowerCase().trim();
-  // Filter page navigation
-  document.querySelectorAll('#search-results .op-result').forEach(r => {
-    const text = r.textContent.toLowerCase();
-    r.style.display = text.includes(q) ? 'flex' : 'none';
-  });
   // Filter active page content (tables + cards)
   const countEl = document.getElementById('content-match-count');
   const infoEl = document.getElementById('content-match-info');
